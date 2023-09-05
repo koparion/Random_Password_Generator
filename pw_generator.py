@@ -28,8 +28,8 @@ try:
         if(any(char in special_characters for char in password) and sum(char in digits for char in password)>=2):
             break
     
-except ValueError:
-    print("Please enter valid number")
+except:
+    print("Error Generating")
              
 
 print(password)
