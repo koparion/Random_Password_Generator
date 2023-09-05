@@ -10,9 +10,12 @@ special_characters = string.punctuation
 alphabet = letters + digits + special_characters
 password = ''
 
+print("Random Password Generator")
+print("Criteria: 1)Enter value higher than 8 | 2) Enter value that is number only")
+
 while True:
     try:
-        password_length = int(input("\nA-Password Length: "))
+        password_length = int(input("\nPassword Length: "))
         if(password_length<8):
             print("Please select higher than 8 characters for password length")
         else:
@@ -33,5 +36,5 @@ except:
              
 
 print(password)
-             
 
+exit = input("\nPress Enter to close program.")
